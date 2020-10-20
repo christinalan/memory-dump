@@ -1,0 +1,41 @@
+* {
+  font-family: "Lateef", cursive;
+}
+
+h1 {
+  font-family: "El Messiri", sans-serif;
+  letter-spacing: 50px;
+  text-align: center;
+}
+
+.input {
+  width: 150px;
+}
+
+.log-button {
+  font-size: 15px;
+  padding: 10px 15px;
+  border-radius: 15px;
+  margin: 20px;
+}
+
+.both-containers {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.trackers {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.tracker-button {
+  font-size: 20px;
+  border-radius: 10px;
+  margin-top: 75px;
+  padding: 5px 100px;
+  width: 100%;
+}
