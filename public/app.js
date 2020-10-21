@@ -100,10 +100,10 @@ window.addEventListener('load', () => {
         .then(data => {
             console.log(data.data);
         })
+              //if it's clicked, then content disappears
         document.getElementById('bad-info').innerHTML = '';
-      trashClicked = !trashClicked;
-      //if it's clicked, then content disappears
-      console.log(trashClicked);
+    //   trashClicked = !trashClicked;
+    //   console.log(trashClicked);
     })
     
 })
