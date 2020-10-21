@@ -93,7 +93,7 @@ app.post('/trashBadMem', (req, res) => {
 })
 
 app.get('/trashedBadMem', (req, res) => {
-    dbBad.remove({}, (err, numRemoved)=> {
+    dbBad.remove({}, {multi: true}, (err, numRemoved)=> {
         if(err) {
             res.json({task:"task failed"})
         } else {
