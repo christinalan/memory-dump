@@ -83,14 +83,13 @@ window.addEventListener('load', () => {
         .then(data => {
             document.getElementById('bad-info').innerHTML = '';
             console.log(data.data);
-        
+       
                 for (let i=0; i< data.data.length; i++) {
                     string = data.data[i].date + " : " + data.data[i].memory;
                     element = document.createElement('p');
                     element.innerHTML = string;
                     document.getElementById('bad-info').appendChild(element);
                 }
-            //  trashClicked = false;
        
         })
     })
@@ -103,6 +102,7 @@ window.addEventListener('load', () => {
         })
         document.getElementById('bad-info').innerHTML = '';
       trashClicked = !trashClicked;
+      //if it's clicked, then content disappears
       console.log(trashClicked);
     })
     
