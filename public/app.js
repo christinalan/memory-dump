@@ -1,4 +1,4 @@
-let trashClicked = false;
+let trashClicked;
 let string;
 let element;
 
@@ -83,16 +83,14 @@ window.addEventListener('load', () => {
         .then(data => {
             document.getElementById('bad-info').innerHTML = '';
             console.log(data.data);
-            if(trashClicked == true) {
-                document.getElementById('bad-info').innerHTML = '';
-            } else {
+        
                 for (let i=0; i< data.data.length; i++) {
                     string = data.data[i].date + " : " + data.data[i].memory;
                     element = document.createElement('p');
                     element.innerHTML = string;
                     document.getElementById('bad-info').appendChild(element);
                 }
-            } trashClicked = false;
+            //  trashClicked = false;
        
         })
     })
@@ -102,9 +100,9 @@ window.addEventListener('load', () => {
         .then(resp => resp.json())
         .then(data => {
             console.log(data.data);
-            // document.getElementById('bad-info').innerHTML = '';
         })
-      trashClicked = true;
+        document.getElementById('bad-info').innerHTML = '';
+      trashClicked = !trashClicked;
       console.log(trashClicked);
     })
     

@@ -45,11 +45,10 @@ h1 {
   height: 25%;
 }
 #trash-image {
-  display: flex;
-  flex-direction: row;
-  float: right;
-  margin-top: -50px;
-  margin-right: 75px;
-  bottom: 10px;
-  left: 200px;
+  /* display: flex;
+  flex-direction: row; */
+  position: fixed;
+  right: 100px;
+  top: 35%;
+  /* bottom: 10px; */
 }
